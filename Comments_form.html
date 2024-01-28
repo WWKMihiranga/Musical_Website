@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Website raiting form</title>
+    <link rel="stylesheet" href="CSS/Comments_form.css">
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><img src="Images/logo/Music_Arcade.jpg.jpg" alt="Music Arcade" ></li>
+        <li><a href="Home.html">Home</a></li>  
+        <li><a href="Gallery.html">Gallery</a></li>  
+        <li><a href="Buy_products.html">Buy Products</a></li>  
+        <li><a href="Quiz.html">Quiz</a></li> 
+        <li><a href="SVG.html">Site Map</a> </li> 
+        <li><a href="Our_team.html">Student details</a></li>  
+        <li><a href="Comments_form.html" class="Active_bar">Comments Form</a></li>    	
+      </ul>
+    </nav>
+
+    <div class="main-block">
+      <h1 style="color: white;">How Would You Rate Our Website ??</h1>
+      <form action="mailto:nishadiamc@gmail.com" onsubmit="return validateForm(event)" method="post">
+        <div class="info">
+          <div class="info-item">
+            <input type="text" name="name" id="name" placeholder="Name" >
+          </div>
+
+          <div  class="info-item">
+            <input type="text" name="age" id="age" placeholder="Age" >
+          </div>
+          
+          <div  class="info-item">
+            <input type="text" name="phone" id="phone" placeholder="Phone" >
+          </div>
+
+          <div  class="info-item">
+            <input type="text" name="email" id="email" placeholder="Email" >
+          </div>
+        </div>
+
+        <h3>Please Rate Our Website</h3>
+        <table>
+            <tr>
+                <td><label for="rate1">Excellent</label></td>
+                <td><input type="radio" id="rate1" name="rate" value="1"></td>
+            </tr>
+
+            <tr>
+                <td><label for="rate2">Very Good</label></td>
+                <td><input type="radio" id="rate2" name="rate" value="2"></td>
+            </tr>
+
+            <tr>
+                <td><label for="rate3">Good</label></td>
+                <td><input type="radio" id="rate3" name="rate" value="3"></td>
+            </tr>
+
+            <tr>
+                <td><label for="rate4">Bad</label></td>
+                <td><input type="radio" id="rate4" name="rate" value="4"></td>
+            </tr>
+
+            <tr>
+                <td><label for="rate5">Very Bad</label></td>
+                <td><input type="radio" id="rate5" name="rate" value="5"></td>
+            </tr>
+
+            <tr>
+              <td><p>How did you want to complete this task today? (optional)</p></td>
+              <td>
+                  <select name="how">
+                      <option value="" disabled selected>-----Please select your option-----</option>
+                      <option value="phone">Phone</option>
+                      <option value="website">Website</option>
+                      <option value="webchat">Webchat</option>
+                      <option value="socialmedia">Social media</option>
+                      <option value="email">Email</option>
+                  </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td><p>If you had to complete this task again, 
+                  how would you prefer to do it? (optional)</p>
+              </td>
+              <td>
+                  <select name="how_1">
+                      <option value="" disabled selected>-----Please select your option-----</option>
+                      <option value="phone">Phone</option>
+                      <option value="website">Website</option>
+                      <option value="webchat">Webchat</option>
+                      <option value="socialmedia">Social media</option>
+                      <option value="email">Email</option>
+                  </select>
+              </td>
+            </tr>
+        </table>
+        <h3>Please Comment on Your Rating</h3>
+        <textarea id="comment" rows="4"></textarea>
+        <button type="submit" >Submit</button>
+        <input type="reset" value="Reset">
+
+        <script>
+          function validateForm(event) {
+            event.preventDefault();
+
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var comment = document.getElementById("comment").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var how = document.querySelector('select[name="how"]').value;
+            var how_1 = document.querySelector('select[name="how_1"]').value;
+
+
+            if (name.trim() == "") {
+              alert("Please enter your name");
+              return false;
+            }
+
+            if (email.trim() == "") {
+              alert("Please enter an email");
+              return false;
+            }
+
+            if (isNaN(age) || age <18 || age > 99) {
+              alert("Please enter a valid age between 18 and 99");
+              return false;
+            }
+            
+            if(phone.trim() == "" || isNaN(phone)){
+              alert("Please enter a valid phone number.")
+              return false;
+            }
+
+            if (how.trim() == "") {
+              alert("Please select an option for 'How did you want to complete this task today?'");
+              return false;
+            }
+
+            if (how_1.trim() == "") {
+              alert("Please select an option for 'If you had to complete this task again, how would you prefer to do it?'");
+              return false;
+            }
+
+            if (comment.trim() == "") {
+              alert("Please enter a comment");
+              return false;
+            }
+            
+            return true;
+          }
+        </script>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-main">
+        <div class="footer-copyright">
+        <p>Copyright © 2023 Music Arcade Pvt. Ltd. All rights reserved.</p>
+        <div class="footer-author">
+          <p><a href="Page_editor_N.html" target="_blank">Author - Nishadi Perera</a></p>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

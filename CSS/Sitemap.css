@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'roboot', sans-serif;
+  text-decoration: none;
+}
+
+  
+body{
+    background-image: linear-gradient(to bottom right,rgb(38, 39, 43) , rgb(0, 0, 0));
+    /* background-image: url(https://images.unsplash.com/photo-1525439565082-5e4dc884187d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI0fHxibHVlJTIwYmx1ciUyMG11c2ljJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60); */
+    /* background-color:  #030b41; */
+}
+
+
+#svgJS g:hover g text,
+#svgJS g:hover text {
+    font-weight: bold;
+}
+
+
+#svgJS g:hover rect,
+#svgJS g:focus rect {
+    fill: hsla(24, 20%, 50%,.3);
+    stroke: black;
+    stroke-width: 2;
+}

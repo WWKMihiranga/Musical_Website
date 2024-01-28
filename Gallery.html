@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link  rel="stylesheet" href="CSS/gallery.css">
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><img src="Images/Music_Arcade.jpg" alt="Music Arcade"></li>
+			<li><a href="Home.html">Home</a></li>  
+			<li><a href="Gallery.html" class="Active_bar">Gallery</a></li>  
+			<li><a href="Buy_products.html">Buy Products</a></li>  
+			<li><a href="Quiz.html">Quiz</a></li> 
+			<li><a href="SVG.html">Site Map</a> </li> 
+			<li><a href="Our_team.html">Student details</a></li>  
+			<li><a href="Comments_form.html">Comments Form</a></li>    	
+		</ul>
+	</nav>
+
+	<section class="main_img">
+		<h1>Shop your favorite Music Taste.</h1>
+	</section>
+	
+
+	<button class="theme_1" id="button_1" onclick="theme_1_function()"></button>
+	<button class="theme_2" id="button_2" onclick="theme_2_function()"></button>
+	<button class="theme_3" id="button_3" onclick="theme_3_function()"></button>
+
+	<button class="size_1" onclick="changeFontSize(16)">Size Small</button>
+	<button class="size_2" onclick="changeFontSize(20)">Size Medium</button>
+	<button class="size_3" onclick="changeFontSize(24)">Size Large</button>
+	
+
+	<section class="content-box">
+		<div class="container">
+			<h2>Solo Artists</h2>
+			<div class="grid_1">
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/harry-styles-2021-billboard-1548.webp" alt="Harry Styles"> 
+					</div>
+					<div class="dropdown-content">
+						<h3>Harry Styles</h3>
+						<img src="Images/Gallery-images/harry-styles-2021-billboard-1548.webp"
+						style="height: 480px; width: 800px ;" alt="Harry">
+						<p>Harry Edward Styles is an English singer and songwriter. 
+							His musical career began in 2010 as a solo contestant on the 
+							British music competition series The X Factor. Following his elimination, 
+							he was brought back to join the boy band One Direction.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/Taylor-Swift-Midnights-era_feature.jpg" alt="Taylor Swift">
+					</div>
+					<div class="dropdown-content">
+						<h3>Taylor Swift</h3>
+						<img src="Images/Gallery-images/Taylor-Swift-Midnights-era_feature.jpg"
+						style="height: 480px; width: 800px ;" alt="Taylor">
+						<p>Taylor Alison Swift is an American singer-songwriter. 
+							Her genre-spanning discography, songwriting and artistic reinventions have received 
+							critical praise and wide media coverage. Born in West Reading, Pennsylvania, 
+							Swift moved to Nashville at age 14 to become a country artist.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/Ed-Sheeran-live-2022-696x442.jpg" alt="Ed Sheeran">
+					</div>
+					<div class="dropdown-content">
+						<h3>Ed Sheeran</h3>
+						<img src="Images/Gallery-images/Ed-Sheeran-live-2022-696x442.jpg"
+						style="height: 480px; width: 800px ;" alt="Ed">
+						<p>Edward Christopher Sheeran MBE is an English singer-songwriter. 
+							Born in Halifax, West Yorkshire, and raised in Framlingham, Suffolk, 
+							he began writing songs around the age of eleven. In early 2011, 
+							Sheeran independently released the extended play No. 5 Collaborations Project.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/selena_gomaz_2222222.jpg" alt="Selena Gomaz">
+					</div>
+					<div class="dropdown-content">
+						<h3>Selena Gomaz</h3>
+						<img src="Images/Gallery-images/selena_gomaz_2222222.jpg"
+						style="height: 480px; width: 800px ;" alt="Selena">
+						<p>Selena Marie Gomez is an American singer, actress, producer, and businesswoman. 
+							Gomez began her acting career on the children's television series Barney & Friends. 
+							As a teenager, she rose to prominence for starring as Alex Russo on the 
+							Disney Channel television series Wizards of Waverly Place.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<h2>Music Bands</h2>
+			<div class="grid_1">
+				
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/one_dicrection.jpg" alt="One Direction">
+					</div>
+					<div class="dropdown-content">
+						<h3>One Direction</h3>
+						<img src="Images/Gallery-images/one_dicrection.jpg"
+						style="height: 480px; width: 800px ;" alt="1D">
+						<p>One Direction, often shortened to 1D, are an English-Irish pop boy band formed in London in 2010. 
+							The group is composed of Niall Horan, Liam Payne, Harry Styles, Louis Tomlinson, and previously 
+							Zayn Malik until his departure from the group in March 2015.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/neighbourhood_3.jpg" alt="The Neighbourhood">
+					</div>
+					<div class="dropdown-content">
+						<h3>The Neighbourhood</h3>
+						<img src="Images/Gallery-images/neighbourhood_3.jpg"
+						style="height: 480px; width: 800px ;" alt="Neighbourhood">
+						<p>The Neighbourhood is an American rock band formed in Newbury Park, California, in 2011. 
+							The band is composed of vocalist Jesse Rutherford, guitarists Jeremy Freedman and Zach Abels, 
+							and bassist Mikey Margott.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/artic_monkey.jpeg" alt="Arctic Monkeys Band">
+					</div>
+					<div class="dropdown-content">
+						<h3>Arctic Monkeys</h3>
+						<img src="Images/Gallery-images/artic_monkey.jpeg"
+						style="height: 480px; width: 800px ;" alt="Arctic Monkeys">
+						<p>Arctic Monkeys are an English rock band formed in Sheffield in 2002. 
+							The group consists of Alex Turner, Jamie Cook, Nick O'Malley, and Matt Helders. 
+							Former band member Andy Nicholson left the band in 2006 shortly after their debut album was released.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/coldplay.jpg" alt="Coldplay band">
+					</div>
+					<div class="dropdown-content">
+						<h3>Coldplay</h3>
+						<img src="Images/Gallery-images/coldplay.jpg"
+						style="height: 480px; width: 800px ;" alt="Coldplay">
+						<p>Coldplay are a British rock band formed in London in 1997. 
+							They consist of vocalist and pianist Chris Martin, guitarist Jonny Buckland, 
+							bassist Guy Berryman, drummer Will Champion and creative director Phil Harvey.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-box">
+		<div class="container">
+			<h2>Unique Music Instruments</h2>
+			<div class="grid_1">
+				
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/clarinet.webp" alt="Clarinet instrument">
+					</div>
+					<div class="dropdown-content">
+						<h3>Clarinet</h3>
+						<img src="Images/Gallery-images/clarinet.webp"
+						style="height: 480px; width: 800px ;" alt="Clarinet">
+						<p>The clarinet is a single-reed musical instrument in the woodwind family, 
+							with a nearly cylindrical bore and a flared bell. Clarinets comprise a 
+							family of instruments of differing sizes and pitches. 
+							The clarinet family is the largest woodwind family, 
+							ranging from the BB♭ contrabass to the E♭ soprano.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/accordion.jpeg" alt="Accordion instrument">
+					</div>
+					<div class="dropdown-content">
+						<h3>Accordion</h3>
+						<img src="Images/Gallery-images/accordion.jpeg"
+						style="height: 480px; width: 800px ;" alt="Accordion">
+						<p>Accordions are a family of box-shaped musical instruments of the bellows-driven free reed aerophone type, 
+							colloquially referred to as a squeezebox.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/cello_2.jpg" alt="Cello Instrument">
+					</div>
+					<div class="dropdown-content">
+						<h3>Cello</h3>
+						<img src="Images/Gallery-images/cello_2.jpg"
+						style="height: 480px; width: 800px ;" alt="Cello">
+						<p>The cello or violoncello is a bowed string instrument of the violin family. 
+							Its four strings are usually tuned in perfect fifths: from low to high, C₂, G₂, D₃ and A₃. 
+							The viola's four strings are each an octave higher.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/harp.jpg" alt="Harp Instrument">
+					</div>
+					<div class="dropdown-content">
+						<h3>Harp</h3>
+						<img src="Images/Gallery-images/harp.jpg"
+						style="height: 480px; width: 800px ;" alt="Harp">
+						<p>The harp is a stringed musical instrument that has individual strings running at an angle to its soundboard; 
+							the strings are plucked with the fingers. Harps can be made and played in various ways, 
+							standing or sitting, and in orchestras or concerts. Its most common form is triangular 
+							in shape and made of wood.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<h2>International Music Awards</h2>
+			<div class="grid_1">
+				
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/client-logo-awards-grammy.png" alt="Grammy Awards">
+					</div>
+					<div class="dropdown-content">
+						<h3>Grammy Awards</h3>
+						<img src="Images/Gallery-images/client-logo-awards-grammy.png"
+						style="height: 480px; width: 800px ;" alt="Grammys">
+						<p>The Grammy Awards, or simply known as the Grammys, 
+							are awards presented by the Recording Academy of the United States 
+							to recognize "outstanding" achievements in the music industry. 
+							They are regarded by many as the most prestigious, 
+							significant awards in the music industry worldwide. 
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/Brits_logo.webp" alt="Brit awards">
+					</div>
+					<div class="dropdown-content">
+						<h3>British Record Industry Trust Show</h3>
+						<img src="Images/Gallery-images/Brits_logo.webp"
+						style="height: 480px; width: 800px ;" alt="Brits">
+						<p>The BRIT Awards are the British Phonographic Industry's annual popular music awards. 
+							The name was originally a shortened form of "British", "Britain", or "Britannia", 
+							but subsequently became a backronym for British Record Industry Trusts Show.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/vma_log.png" alt="VMA awards">
+					</div>
+					<div class="dropdown-content">
+						<h3>MTV Video Music Awards</h3>
+						<img src="Images/Gallery-images/vma_log.png"
+						style="height: 480px; width: 800px ;" alt="VMAs">
+						<p>The MTV Video Music Awards is an award show presented by the cable channel 
+							MTV to honour the best in the music video medium.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/billboard-music-awards.webp" alt="Billboard music awards">
+					</div>
+					<div class="dropdown-content">
+						<h3>Billboard Music Awards</h3>
+						<img src="Images/Gallery-images/billboard-music-awards.webp"
+						style="height: 480px; width: 800px ;" alt="BMAs">
+						<p>The Billboard Music Awards are honors given out annually by Billboard, 
+							a publication covering the music business and a music popularity chart. 
+							The Billboard Music Awards show has been held annually since 1990, 
+							with the exception of the years 2007 through 2010.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="content-box-2" >
+		<div class="container">
+			<h2>Music Competitions/Games</h2>
+			<div class="grid_1">
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/eurovision.png" alt="Eurovision contest">
+					</div>
+					<div class="dropdown-content">
+						<h3>Eurovision Song Contest</h3>
+						<img src="Images/Gallery-images/eurovision.png"
+						style="height: 480px; width: 800px ;" alt="Eurovision">
+						<p>The Eurovision Song Contest, sometimes abbreviated to ESC and often known simply as Eurovision, 
+							is an international song competition organised annually by the European Broadcasting Union, 
+							featuring participants representing primarily European countries.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/x-factor.webp" alt="Xfactor contest">
+					</div>
+					<div class="dropdown-content">
+						<h3>The X factor</h3>
+						<img src="Images/Gallery-images/x-factor.webp"
+						style="height: 480px; width: 800px ;" alt="Xfactor">
+						<p>Contestants compete against each other to impress the judges and the voting audience 
+							with their musical talent and win the coveted prize, a record contract.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/choir_games_1.png" alt="European choir games">
+					</div>
+					<div class="dropdown-content">
+						<h3>European Choir Games</h3>
+						<img src="Images/Gallery-images/choir_games_1.png"
+						style="height: 480px; width: 800px ;" alt="Choir games">
+						<p>The European Choir Games continue: Once again beautiful Sweden will host the event, 
+							which is famous as a continental, European version of the World Choir Games – 
+							the Olympic Games of Choral Music.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/voice.jpg" alt="Voice contest">
+					</div>
+					<div class="dropdown-content">
+						<h3>The Voice</h3>
+						<img src="Images/Gallery-images/voice.jpg"
+						style="height: 480px; width: 800px ;" alt="The Voice">
+						<p>Contestants are selected through public auditions and trained by a panel of 
+							four coaches who guide and critique their performances in an attempt to 
+							discover America's next great voice.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<h2>Music Streaming Platforms</h2>
+			<div class="grid_1">
+				
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/spotify_logo_2.png" alt="Spotify logo">
+					</div>
+					<div class="dropdown-content">
+						<h3>Spotify</h3>
+						<img src="Images/Gallery-images/spotify_logo_2.png"
+						style="height: 480px; width: 800px ;" alt="Spotify">
+						<p>Spotify is a proprietary Swedish audio streaming and media services provider founded 
+							on 23 April 2006 by Daniel Ek and Martin Lorentzon. It is one of the largest music streaming 
+							service providers, with over 489 million monthly active users, including 205 million paying subscribers, 
+							as of December 2022.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/apple-music_logo_3.png" alt="apple music logo">
+					</div>
+					<div class="dropdown-content">
+						<h3>Apple Music</h3>
+						<img src="Images/Gallery-images/apple-music_logo_3.png"
+						style="height: 480px; width: 800px ;" alt="Apple music">
+						<p>Apple Music is a music, audio and video streaming service developed by Apple Inc. 
+							Users select music to stream to their device on-demand, or they can listen to existing playlists.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-content">
+					<img src="Images/Gallery-images/YTM_logo.png" alt="Youtube Music">
+					</div>
+					<div class="dropdown-content">
+						<h3>Youtube Music</h3>
+						<img src="Images/Gallery-images/YTM_logo.png"
+						style="height: 480px; width: 800px ;" alt="Youtube">
+						<p>YouTube Music is a music streaming service developed by YouTube, a subsidiary of Google. 
+							It provides a tailored interface for the service, oriented towards music streaming, 
+							allowing users to browse through songs and music videos on YouTube based on genres, 
+							playlists, and recommendations.
+						</p>
+					</div>
+				</div>
+
+				<div class="dropdown">
+					<div class="grid-product">
+					<img src="Images/Gallery-images/soundcloud_logo_2.jpg" alt="Souncloud Logo">
+					</div>
+					<div class="dropdown-content">
+						<h3>SoundCloud</h3>
+						<img src="Images/Gallery-images/soundcloud_logo_2.jpg"
+						style="height: 480px; width: 800px ;" alt="Souncloud">
+						<p>SoundCloud is a German music streaming service that enables its users to upload, promote, and share audio. 
+							Founded in 2007 by Alexander Ljung and Eric Wahlforss, SoundCloud is one of the largest music streaming 
+							services in the world and is available in 190 countries and territories.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		function theme_1_function(){
+			document.body.style.backgroundImage = "linear-gradient( to bottom right ,rgb(52, 52, 69), rgb(50,112,155 ))";
+		}
+
+		function theme_2_function(){
+			document.body.style.backgroundImage = "linear-gradient( to bottom right ,rgb(52, 52, 69), rgb(148, 56, 155))";
+		}
+
+		function theme_3_function(){
+			document.body.style.backgroundImage = "linear-gradient( to bottom right ,rgb(52, 52, 69), rgb(121, 116, 119))";
+		}
+
+		function changeFontSize(size) {
+			document.body.style.fontSize = size + "px";
+		}
+	</script>
+	
+<footer>
+	<div class="footer-main">
+	  <div class="footer-copyright">
+		<p>Copyright © 2023 Music Arcade Pvt. Ltd. All rights reserved.</p>
+		<div class="footer-author">
+			<p><a href="Page_editor_J.html" target="_blank">Author - Joseph Rodrigo</a></p>
+		</div>
+	  </div>
+	</div>
+</footer>
+
+</body>
+</html>
